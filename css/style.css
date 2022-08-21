@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:nth-child(1) {
+  top: 30px;
+  left: 110px;
+  background-color: rgb(255, 136, 136);
+  z-index: 0;
+}
+
+.box:nth-child(2) {
+  top: 120px;
+  left: 200px;
+  background-color: rgb(126, 138, 235);
+  z-index: 1;
+}
+
+.box:nth-child(3) {
+  top: 210px;
+  left: 290px;
+  background-color: rgb(77, 239, 153);
+  z-index: 0;
+}
